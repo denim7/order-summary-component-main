@@ -1,0 +1,94 @@
+
+body {
+    font-family: "Red_Hat_Display";
+    background: url('./images/pattern-background-desktop.svg')  hsl(225, 100%, 98%) no-repeat; 
+    
+}
+
+.container {
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 400px;
+    background-color:white;
+    margin: auto;
+    
+}
+#image_hero {
+    width: 400px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#card_title {
+    color:hsl(223, 47%, 23%);
+    font-size: 26px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.card_description {
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.mini_card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: hsl(225, 100%, 98%);
+    height: 90px;
+    width: 90%;
+    border-radius: 10px;
+    margin-left:40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+
+}
+
+#leftplan {
+    display: flex;
+    align-items: center;
+  }
+
+#plan {
+    margin-left: 20px;
+    text-align: left;
+}
+.mini_card > div {
+    margin: 10px;
+    padding: 20px;
+}
+#icon_music {
+    width: 30px;
+    height: 30px;
+}
+#title_text {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+#price_tag {
+    color: hsl(224, 23%, 55%);
+    
+}
+#edit_text {
+    color: hsl(245, 75%, 52%);
+}
+#payment_btn {
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 40px;
+    cursor: pointer;
+    width: 80%;
+    
+}
+#cancel_btn {
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+}
