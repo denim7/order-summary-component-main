@@ -1,57 +1,67 @@
-
+/* Styling the background with universal elements */
 body {
-    font-family: "Red_Hat_Display";
+    font-family: 'Red Hat Display', sans-serif;
     background: url('./images/pattern-background-desktop.svg')  hsl(225, 100%, 98%) no-repeat; 
     
 }
 
+/* This is the main container that holds the image, texts, and button elements */
 .container {
-    border: 1px solid white;
+    border: none solid white;
     border-radius: 15px;
     width: 400px;
     background-color:white;
     margin: auto;
+    box-shadow: 2px 14px 19px -1px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 2px 14px 19px -1px rgba(0,0,0,0.24);
+    -moz-box-shadow: 2px 14px 19px -1px rgba(0,0,0,0.24);
     
 }
+/* Image illustration */
 #image_hero {
     width: 400px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-
+/* Order summary card title */
 #card_title {
     color:hsl(223, 47%, 23%);
     font-size: 26px;
     font-weight: 900;
     text-align: center;
+    
+   
 }
-
+/* Order summary brief description */
 .card_description {
     color: hsl(224, 23%, 55%);
     font-size: 16px;
     text-align: center;
     font-weight: 500;
+    line-height: 10px;
+    padding-bottom: 10px;
 }
-
+/* This card holds the music icon, payment plan and edit option */
 .mini_card {
     display: flex;
     align-items: center;
     justify-content: space-around;
     background: hsl(225, 100%, 98%);
     height: 90px;
-    width: 90%;
+    width: 80%;
     border-radius: 10px;
     margin-left:40px;
     margin-right: 40px;
     margin-bottom: 30px;
-
+    line-height: 10px;
+    
 }
-
+/* Comprises of music icon and payment plan */
 #leftplan {
     display: flex;
     align-items: center;
   }
-
+/* Holds the payment plan information */
 #plan {
     margin-left: 20px;
     text-align: left;
@@ -60,21 +70,35 @@ body {
     margin: 10px;
     padding: 20px;
 }
+/* Music icon */
 #icon_music {
     width: 30px;
     height: 30px;
 }
+/* Billing information comprising of yearly plan */
 #title_text {
     color: hsl(223, 47%, 23%);
+    font-size: 16px;
     font-weight: 900;
 }
+/* Billing information comprising of price tag */
 #price_tag {
     color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    font-weight: 500;
     
 }
+/* Edit button that changes billing information */
 #edit_text {
     color: hsl(245, 75%, 52%);
+    font-size: 16px;
+    font-weight: 700;
 }
+
+#edit_text:hover {
+    color: hsl(224, 23%, 55%);
+}
+/* Payment button that proceeds to checkout */
 #payment_btn {
     background-color: hsl(245, 75%, 52%);
     border: none;
@@ -86,9 +110,16 @@ body {
     margin-left: 40px;
     cursor: pointer;
     width: 80%;
-    
+    font-weight: 700;
+    box-shadow: 2px 14px 19px -1px rgba(0,0,0,0.27);
+    -webkit-box-shadow: 2px 14px 19px -1px rgba(0,0,0,0.27);
+    -moz-box-shadow: 2px 14px 19px -1px rgba(0,0,0,0.27);
 }
+/* Option for changing billing information before checkout */
 #cancel_btn {
     color: hsl(224, 23%, 55%);
     text-align: center;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 40px;
 }
